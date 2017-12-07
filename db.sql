@@ -1,0 +1,3 @@
+CREATE TABLE `commentsjs`.`parents` ( `id` INT(12) NOT NULL AUTO_INCREMENT , `user` VARCHAR(60) NOT NULL , `text` TEXT NOT NULL , `date` DATETIME NOT NULL , `code` VARCHAR(12) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `commentsjs`.`children` ( `id` INT(12) NOT NULL AUTO_INCREMENT , `user` VARCHAR(60) NOT NULL , `text` TEXT NOT NULL , `date` DATETIME NOT NULL , `par_code` VARCHAR(12) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `userinfo`.`users` ( `id` INT(12) NOT NULL AUTO_INCREMENT , `images` VARCHAR(300) NOT NULL , `firstname` VARCHAR(300) NOT NULL , `lastname` VARCHAR(300) NOT NULL , `uid` VARCHAR(300) NOT NULL , `pwd` VARCHAR(300) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
